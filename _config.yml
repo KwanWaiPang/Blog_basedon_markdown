@@ -25,7 +25,7 @@ navigation:
   # - name: 博客
   #   url: https://kwanwaipang.github.io/File/Blogs/My_Blog.html
   - name: 关于
-    url: KwanWaiPang.github.io #/about
+    url: https://kwanwaipang.github.io/ #/about
   - name: 归档
     url: /archive
   - name: 标签
