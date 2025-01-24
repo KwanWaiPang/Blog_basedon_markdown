@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 date:   2025-01-24
-tags: [geek]
+tags: [markdown]
 comments: true
 author: kwanwaipang
 ---
