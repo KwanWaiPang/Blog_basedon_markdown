@@ -36,9 +36,9 @@ paginate: 8
 
 excerpt_separator: <!-- more -->
 
-# Includes an icon in the footer for each username you enter
+# Includes an icon in the footer for each username you enter（配置各种社交链接）
 footer-links:
-  #weibo: frommidworld #请输入你的微博个性域名 https://www.weibo.com/<thispart>
+  weibo:  #请输入你的微博个性域名 https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<username>
   dribbble:
   zhihu: 
