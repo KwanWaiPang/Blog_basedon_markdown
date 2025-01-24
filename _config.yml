@@ -22,8 +22,8 @@ favicon: https://kwanwaipang.github.io/Poster_files/hku_logo.jpg
 navigation:
   - name: 首页
     url: 
-  - name: 博客
-    url: https://kwanwaipang.github.io/File/Blogs/My_Blog.html
+  # - name: 博客
+  #   url: https://kwanwaipang.github.io/File/Blogs/My_Blog.html
   - name: 关于
     url: /about
   - name: 归档
@@ -38,6 +38,7 @@ excerpt_separator: <!-- more -->
 
 # Includes an icon in the footer for each username you enter（配置各种社交链接）
 footer-links:
+  home: https://kwanwaipang.github.io/File/Blogs/My_Blog.html
   weibo:  #请输入你的微博个性域名 https://www.weibo.com/<thispart>
   behance: # https://www.behance.net/<username>
   dribbble:
