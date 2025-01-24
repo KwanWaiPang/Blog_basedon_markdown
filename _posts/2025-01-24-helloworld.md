@@ -23,3 +23,4 @@ author: kwanwaipang
 # 参考资料
 * [lemonchann的博客](https://lemonchann.github.io/blog/create_blog_with_github_pages/)
 * [为Jekyll博客添加小功能](https://blog.csdn.net/ds19991999/article/details/81293467)
+* [Markdown 语法简明笔记](https://lemonchann.github.io/blog/Markdown_brief_syntactic/)
