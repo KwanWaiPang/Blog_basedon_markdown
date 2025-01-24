@@ -16,7 +16,7 @@ author: kwanwaipang
 
 配置过程都是参考[链接](https://lemonchann.github.io/blog/create_blog_with_github_pages/)
 
-![插入动图](images/下次一定表情宝.gif)
+![插入动图](https://github.com/KwanWaiPang/Blog_basedon_markdown/tree/main/images/yijiansanlian.gif)
 
 # 参考资料
 * [lemonchann的博客](https://lemonchann.github.io/blog/create_blog_with_github_pages/)
