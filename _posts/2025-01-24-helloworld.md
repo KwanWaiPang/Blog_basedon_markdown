@@ -16,7 +16,9 @@ author: kwanwaipang
 
 配置过程都是参考[链接](https://lemonchann.github.io/blog/create_blog_with_github_pages/)
 
-![插入动图](https://github.com/KwanWaiPang/Blog_basedon_markdown/blob/main/images/yijiansanlian.gif)
+<div align="center">
+  <img src="../images/yijiansanlian.gif" width="60%" />
+</div>
 
 # 参考资料
 * [lemonchann的博客](https://lemonchann.github.io/blog/create_blog_with_github_pages/)
