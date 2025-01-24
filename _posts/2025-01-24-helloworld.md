@@ -20,6 +20,11 @@ author: kwanwaipang
   <img src="../images/yijiansanlian.gif" width="60%" />
 </div>
 
+# 插入youtube视频
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Nn40U4e5Si8?si=P_4XDu5l83VeVRQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 # 参考资料
 * [lemonchann的博客](https://lemonchann.github.io/blog/create_blog_with_github_pages/)
 * [为Jekyll博客添加小功能](https://blog.csdn.net/ds19991999/article/details/81293467)
