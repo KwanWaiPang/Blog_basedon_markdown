@@ -21,15 +21,13 @@ favicon: https://kwanwaipang.github.io/Poster_files/hku_logo.jpg
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
   - name: 首页
-    url: 
-  # - name: 博客
-  #   url: https://kwanwaipang.github.io/File/Blogs/My_Blog.html
-  - name: 关于
-    url: https://kwanwaipang.github.io/ #/about
+    url: #/home
   - name: 归档
     url: /archive
   - name: 标签
     url: /tags
+  - name: 关于
+    url: https://kwanwaipang.github.io/ #/about
 
 # Pagination（分页）
 paginate: 8
