@@ -20,15 +20,15 @@ favicon: https://kwanwaipang.github.io/Poster_files/hku_logo.jpg
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
-  - name: Home Page
+  - name: 首页
     url: 
-  - name: MyBlog
+  - name: 博客
     url: https://kwanwaipang.github.io/File/Blogs/My_Blog.html
-  - name: About me
+  - name: 关于
     url: /about
-  - name: Archive
+  - name: 归档
     url: /archive
-  - name: Tags
+  - name: 标签
     url: /tags
 
 # Pagination（分页）
