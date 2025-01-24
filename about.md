@@ -4,14 +4,24 @@ title: About
 permalink: /about/
 ---
 
-## 关于我
-你好，我是程序员柠檬。
+# Hi~ 👋
 
-国内一线互联网大厂计算机软件工程师、[知乎](https://www.zhihu.com/people/ning-meng-cheng-31-94)编程领域万赞答主。
+<div align="center">
+  <img width=60% src="https://github-readme-stats-one-bice.vercel.app/api?username=KwanWaiPang&show_icons=true&theme=default&count_private=true&role=OWNER,ORGANIZATION_MEMBER&hide=prs,issues" />
+  <img width=30% src="https://github-readme-stats.vercel.app/api/top-langs/?username=KwanWaiPang&layout=compact&langs_count=6&hide=CMake,JavaScript,Cuda,CSS,PowerShell,GLSL,Roff,Shell" />
+</div>
 
-[个人技术公众号](https://mp.weixin.qq.com/mp/homepage?__biz=MzkwOTE2OTY1Nw==&hid=1&sn=6395e40d884ce4dd3900a68a0f5a6b87&scene=18#wechat_redirect)分享编程学习路线、编程学习资源，记录技术成长，欢迎扫码添加：
-
-![公众号二维码](https://github.com/lemonchann/images/raw/master/gzh/%E6%96%87%E6%9C%AB%E6%8E%A8%E5%B9%BF%E6%96%87%E6%A1%88.png)
+<p align="center">
+  <br><br>
+<!--   仓库KwanWaiPang的visits数 -->
+    <img src="https://badges.strrl.dev/visits/KwanWaiPang/KwanWaiPang?&color=green&logo=github">
+  <!--   加入的年数 -->
+    <img src="https://badges.strrl.dev/years/KwanWaiPang?color=green&logo=github">
+    <img src="https://badges.strrl.dev/repos/KwanWaiPang?color=green&logo=github">
+    <img src="https://badges.strrl.dev/commits/daily/KwanWaiPang?color=green&logo=github">
+     <img src="https://badges.strrl.dev/contributions/daily/KwanWaiPang?color=green&logo=github">
+    <img src="https://badges.strrl.dev/issues-and-prs/all/KwanWaiPang?color=green&logo=github">
+</p>
 
 
 
