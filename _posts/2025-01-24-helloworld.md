@@ -48,6 +48,28 @@ hello world
  This is some text in a paragraph.
 {% endhighlight %}
 
+## 插入c++代码
+```cpp
+int main() {
+  int y = SOME_MACRO_REFERENCE;
+  int x = 5 + 6;
+  cout << "Hello World! " << x << std::endl();
+}
+```
+
+```c++
+int main() {
+  int y = SOME_MACRO_REFERENCE;
+  int x = 5 + 6;
+  cout << "Hello World! " << x << std::endl();
+}
+```
+
+## 插入python代码
+```python 
+your_code = do_some_stuff
+```
+
 
 
 # 参考资料
