@@ -52,3 +52,9 @@ hello world
 * [lemonchann的博客](https://lemonchann.github.io/blog/create_blog_with_github_pages/)
 * [为Jekyll博客添加小功能](https://blog.csdn.net/ds19991999/article/details/81293467)
 * [Markdown 语法简明笔记](https://lemonchann.github.io/blog/Markdown_brief_syntactic/)
+
+
+<!-- pv的方式，单个用户点击1篇文章，本篇文章记录1次阅读量 -->
+<span id="busuanzi_container_page_pv">
+  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+</span>
