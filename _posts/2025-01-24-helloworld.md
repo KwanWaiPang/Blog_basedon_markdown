@@ -40,9 +40,10 @@ author: kwanwaipang
 hello world
 ~~~
 
+<p><br></p>
 
 {% highlight html %}
-  <p>This is some text in a paragraph.</p>
+ This is some text in a paragraph.
 {% endhighlight %}
 
 
