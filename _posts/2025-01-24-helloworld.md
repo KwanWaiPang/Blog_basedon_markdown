@@ -35,6 +35,11 @@ author: kwanwaipang
 <iframe width="560" height="315" src="//player.bilibili.com/player.html?isOutside=true&aid=983500021&bvid=BV15t4y1t7yS&cid=777013703&p=1&autoplay=0" title="Bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
+# 插入代码链接
+~~~
+hello world
+~~~
+
 
 
 # 参考资料
