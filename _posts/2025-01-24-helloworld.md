@@ -67,7 +67,7 @@ int main() {
 
 ## 插入python代码
 ```python 
-your_code = do_some_stuff
+print("Hello, World")
 ```
 
 
