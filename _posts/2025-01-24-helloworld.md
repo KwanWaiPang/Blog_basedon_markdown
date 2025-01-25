@@ -51,16 +51,14 @@ hello world
 ## 插入c++代码
 ```cpp
 int main() {
-  int y = SOME_MACRO_REFERENCE;
-  int x = 5 + 6;
+  int x = 6 + 6;
   cout << "Hello World! " << x << std::endl();
 }
 ```
 
 ```c++
 int main() {
-  int y = SOME_MACRO_REFERENCE;
-  int x = 5 + 6;
+  int x = 6 + 6;
   cout << "Hello World! " << x << std::endl();
 }
 ```
