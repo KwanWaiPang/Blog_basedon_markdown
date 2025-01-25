@@ -41,6 +41,11 @@ hello world
 ~~~
 
 
+{% highlight html %}
+  <p>This is some text in a paragraph.</p>
+{% endhighlight %}
+
+
 
 # 参考资料
 * [lemonchann的博客](https://lemonchann.github.io/blog/create_blog_with_github_pages/)
