@@ -5,11 +5,12 @@ date:   2025-01-24
 tags: [markdown]
 comments: true
 author: kwanwaipang
+toc: true
 ---
 
 
-* 目录
-{:toc}
+<!-- * 目录
+{:toc} -->
 
 
 # 标题
@@ -43,9 +44,9 @@ hello world
 
 <p><br></p>
 
-{% highlight html %}
+<!-- {% highlight html %}
  This is some text in a paragraph.
-{% endhighlight %}
+{% endhighlight %} -->
 
 
 
