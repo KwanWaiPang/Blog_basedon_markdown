@@ -12,6 +12,11 @@ author: kwanwaipang
   本文总阅读量<span id="busuanzi_value_page_pv"></span>次
 </span>
 
+<span id="busuanzi_container_page_pv" style="font-family:Consolas;color:Silver;font-size:12px;">
+		本文总阅读量:<span id="busuanzi_container_page_pv" style="font-family:Consolas;color:Silver;font-size:12px;"></span>次
+</span>
+
+
 * 目录
 {:toc}
 
