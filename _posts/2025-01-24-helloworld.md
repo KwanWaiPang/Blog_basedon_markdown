@@ -13,10 +13,10 @@ toc: true
 {:toc} -->
 
 
-# 标题
-基于markdown的静态博客～
+# 引言
+本博客作为基于markdown的静态博客的第一篇博客，用于记录各类型指令以及进行测试~
 
-配置过程都是参考[链接](https://lemonchann.github.io/blog/create_blog_with_github_pages/)
+对于基于markdown静态博客的配置过程可以参考[链接](https://lemonchann.github.io/blog/create_blog_with_github_pages/)，或者直接fork我的[github repositories](https://github.com/KwanWaiPang/Blog_basedon_markdown)
 
 
 # 插入图片
