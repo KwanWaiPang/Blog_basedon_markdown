@@ -12,7 +12,7 @@ author: kwanwaipang
 {:toc}
 
 
-# 标题1 
+# 标题
 基于markdown的静态博客～
 
 配置过程都是参考[链接](https://lemonchann.github.io/blog/create_blog_with_github_pages/)
