@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 date:   2025-01-24
-tags: [markdown]
+tags: [coding]
 comments: true
 author: kwanwaipang
 toc: true

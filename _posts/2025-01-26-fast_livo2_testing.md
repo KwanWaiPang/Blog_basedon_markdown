@@ -13,15 +13,6 @@ toc: true
 
 HKU-MARSLAB的新作FAST-LIVO2终于开源了,用本博文记录下测试过程，并记录学习代码及论文的一些笔记。
 本博客仅供本人学习记录用～
-~~~
-@article{zheng2024fast,
-  title={Fast-livo2: Fast, direct lidar-inertial-visual odometry},
-  author={Zheng, Chunran and Xu, Wei and Zou, Zuhao and Hua, Tong and Yuan, Chongjian and He, Dongjiao and Zhou, Bingyang and Liu, Zheng and Lin, Jiarong and Zhu, Fangcheng and others},
-  journal={IEEE Transactions on Robotics},
-  year={2024},
-  publisher={IEEE}
-}
-~~~
 
 # 代码配置
 按照官方给出的[Github仓库](https://github.com/hku-mars/FAST-LIVO2) step by step配置
@@ -131,3 +122,13 @@ rosbag play YOUR_DOWNLOADED.bag
 * [paper link](https://arxiv.org/pdf/2408.14035)
 * [Fast-LIVO Self Comment](https://github.com/KwanWaiPang/fast_livo_comment)
 * [ROS实验笔记之——FAST-LIVO](https://blog.csdn.net/gwplovekimi/article/details/127844810?spm=1001.2014.3001.5501)
+
+~~~
+@article{zheng2024fast,
+  title={Fast-livo2: Fast, direct lidar-inertial-visual odometry},
+  author={Zheng, Chunran and Xu, Wei and Zou, Zuhao and Hua, Tong and Yuan, Chongjian and He, Dongjiao and Zhou, Bingyang and Liu, Zheng and Lin, Jiarong and Zhu, Fangcheng and others},
+  journal={IEEE Transactions on Robotics},
+  year={2024},
+  publisher={IEEE}
+}
+~~~
