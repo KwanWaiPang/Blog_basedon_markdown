@@ -18,6 +18,8 @@ HKU-MARSLAB的新作FAST-LIVO2终于开源了,用本博文记录下测试过程�
 
 本博客仅供本人学习记录用～
 
+论文：
+
 ~~~
 @article{zheng2024fast,
   title={Fast-livo2: Fast, direct lidar-inertial-visual odometry},
