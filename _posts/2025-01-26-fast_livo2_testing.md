@@ -136,10 +136,23 @@ rosbag play YOUR_DOWNLOADED.bag
 
 {% highlight html %}
 PS:对于FAST-LIVO2-Dataset中不同的序列可能对应不同的参数，具体请见calibration.yaml文件，上面运行的时候忘记修改参数了~
+
+但似乎即使没有改外参效果还是不错的~
 {% endhighlight %}
 
 
-# 论文解读
+# 论文阅读
+Fast-LIVO2是基于Fast-LIVO的升级版本，一个基于ESIKF的lidar-image-imu里程计。跟前作一样，视频与lidar都是采用直接法。同时引入voxelmap（最近的系列工作的lio系统貌似都从fast-lio2改为了voxelmap，比如immesh等）
+此外通过引入on-demanding raycast operation （光线投射操作）和估算图像的曝光时间（这似乎是r3live里面的一个重要贡献）来增强系统的鲁棒性。
+
+<div align="center">
+  <img src="../images/微信截图_20250126212319.png" width="80%" />
+<figcaption>  
+</figcaption>
+</div>
+
+
+
 
 
 # 代码解读
