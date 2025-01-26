@@ -35,23 +35,27 @@ HKU-MARSLAB的新作FAST-LIVO2终于开源了,用本博文记录下测试过程�
 1. Ubuntu, ROS, Sophus都是原本系统安装好的，直接跳过。
 2. Mimalloc是可选项，也跳过
 3. Vikit
+
 ~~~
 cd catkin_ws/src
 git clone https://github.com/xuankuzcr/rpg_vikit.git
 ~~~
+
 4. livox_ros_driver。
 Follow [livox_ros_driver Installation](https://github.com/Livox-SDK/livox_ros_driver).
 5. 下载源码
+
 ~~~
 cd ~/catkin_ws/src
 git clone https://github.com/hku-mars/FAST-LIVO2
-
-#直接cm
+# 直接cm
 cd ../
 catkin_make
 source ~/catkin_ws/devel/setup.bash
 ~~~
+
 6. 出现Sophus相关的报错.在“/home/kwanwaipang/catkin_ws/src/rpg_vikit/vikit_common/CMakeLists.txt”中添加下面代码即可
+
 ~~~
 #添加Sophus_LIBRARIES
 SET(Sophus_LIBRARIES "/usr/local/lib/libSophus.so")
@@ -67,6 +71,7 @@ SET(Sophus_LIBRARIES "/usr/local/lib/libSophus.so")
 
 # 实验测试
 运行代码：
+
 ~~~
 roslaunch fast_livo mapping_avia.launch
 rosbag play YOUR_DOWNLOADED.bag
