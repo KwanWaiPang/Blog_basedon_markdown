@@ -54,7 +54,7 @@ catkin_make
 source ~/catkin_ws/devel/setup.bash
 ~~~
 
-6. 出现Sophus相关的报错.在“/home/kwanwaipang/catkin_ws/src/rpg_vikit/vikit_common/CMakeLists.txt”中添加下面代码即可
+6. 出现Sophus相关的报错.在"/home/kwanwaipang/catkin_ws/src/rpg_vikit/vikit_common/CMakeLists.txt"中添加下面代码即可
 
 ~~~
 #添加Sophus_LIBRARIES
