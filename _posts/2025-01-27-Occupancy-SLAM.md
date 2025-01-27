@@ -64,21 +64,20 @@ PS：直观理解就是对于Cartographer的改进，子图中不仅仅优化pos
 </figcaption>
 </div> -->
 
-<div align="center">
+<!-- <div align="center"> -->
 <center class = "half">
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125335.png" width="41.5%" />
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125324.png" width="40%" />
-</center>
 <figcaption>  
 从建图效果来看感觉跟Cartographer差别不会太大，当然，确实是有提升，边界明显更加sharp一些
 </figcaption>
-</div>
+</center>
+
 
 下图则是大场景下的建图效果（都是150~200m级别的）
 <div align="center">
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125715.png" width="80%" />
 <figcaption>  
-
 </figcaption>
 </div>
 
@@ -91,14 +90,12 @@ PS：直观理解就是对于Cartographer的改进，子图中不仅仅优化pos
 </figcaption>
 </div> -->
 
-<div align="center">
 <center class = "half">
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127130036.png" width="40%" />
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127130044.png" width="40%" />
-</center>
-<figcaption>  
+  <figcaption>  
 </figcaption>
-</div>
+</center>
 
 
 
