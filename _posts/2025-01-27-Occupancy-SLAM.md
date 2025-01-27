@@ -57,12 +57,12 @@ PS：直观理解就是对于Cartographer的改进，子图中不仅仅优化pos
 论文的实验分析仿真的和实际的，直接看看实际的效果如下：
 
 <div align="center">
-  <table style="border-collapse: collapse; border-spacing: 0; background-color: transparent;">
+  <table style="background-color: transparent;">
     <tr>
-      <td style="background-color: transparent;">
+      <td style="border: none; background-color: transparent;">
         <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125335.png" width="100%" />
       </td>
-      <td style="background-color: transparent;">
+      <td style="border: none; background-color: transparent;">
         <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125324.png" width="100%" />
       </td>
     </tr>
@@ -82,12 +82,12 @@ PS：直观理解就是对于Cartographer的改进，子图中不仅仅优化pos
 
 定位精度分析只有在仿真的数据集下有，单位为米，如下图所示。
 <div align="center">
-  <table style="border-collapse: collapse; border-spacing: 0; background-color: transparent;">
+  <table style="background-color: transparent;">
     <tr>
-      <td style="background-color: transparent;">
+      <td style="border: none; background-color: transparent;">
         <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127130036.png" width="100%" />
       </td>
-      <td style="background-color: transparent;">
+      <td style="border: none; background-color: transparent;">
         <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127130044.png" width="100%" />
       </td>
     </tr>

@@ -39,11 +39,14 @@
   {% endif %}
 
   {% if site.footer-links.google_scholar %}
-  <li>
-    <a href="https://scholar.google.com/citations?user={{ site.footer-links.google_scholar }}" class="icon-google-scholar google-scholar" title="Google Scholar">
-      <img src="https://scholar.google.com/favicon.ico" alt="Google Scholar Icon" style="width: 24px; height: 24px;">
-    </a>
-  </li>
+<!-- 添加 Google Scholar 图标和链接 -->
+<li>
+  <a href="https://scholar.google.com/citations?user=YOUR_USER_ID" class="icon-google-scholar" title="Google Scholar">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="24" width="24">
+      <path d="M223.5 0C182.8 0 146 19.1 117.2 53.5C107.8 66.5 99.7 80.7 92.9 96.6C85.3 80.9 78.3 67.2 72.6 53.5C43.8 19.1 7 0 0 0C0 0 0 512 0 512C0 512 0 0 0 0C23.4 0 44.6 0 63.7 15.5C96.7 42.3 123.4 81.8 145.6 127.7C150.9 134.6 157.9 139.3 167.4 139.3C172.5 139.3 177.8 136.8 181.3 131.4L226.9 90.4C241.3 73.7 248 52.4 237.8 34.4C227.6 16.4 211.1 0 192 0H223.5zM385.5 219.5C394.1 219.5 400 225.5 400 231.5C400 237.5 394.1 243.5 385.5 243.5C377 243.5 370.5 237.5 370.5 231.5C370.5 225.5 377 219.5 385.5 219.5zM512 256C512 145.5 424.5 57 304 57C182.5 57 95.9 145.5 95.9 256C95.9 366.5 182.5 454 304 454C424.5 454 512 366.5 512 256zM304 409.5C215.9 409.5 143.5 337.2 143.5 256C143.5 174.8 215.9 102.5 304 102.5C392.1 102.5 464.5 174.8 464.5 256C464.5 337.2 392.1 409.5 304 409.5z"/>
+    </svg>
+  </a>
+</li>
 {% endif %}
   
   {% if site.footer-links.github %}
