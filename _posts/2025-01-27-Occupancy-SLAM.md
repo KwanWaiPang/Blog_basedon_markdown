@@ -56,30 +56,35 @@ PS：直观理解就是对于Cartographer的改进，子图中不仅仅优化pos
 
 论文的实验分析仿真的和实际的，直接看看实际的效果如下：
 
-<center class = "half">
-  <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125335.png" width="41.5%" />
+<div align="center">
+<figure class="half">
+  <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125335.png" width="40%" />
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125324.png" width="40%" />
+</figure>
 <figcaption>  
 从建图效果来看感觉跟Cartographer差别不会太大，当然，确实是有提升，边界明显更加sharp一些
 </figcaption>
-</center>
-
+</div>
 
 下图则是大场景下的建图效果（都是150~200m级别的）
 <div align="center">
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125715.png" width="80%" />
 <figcaption>  
+
 </figcaption>
 </div>
 
 定位精度分析只有在仿真的数据集下有，单位为米，如下图所示。
-
-<center class = "half">
+<div align="center">
+<figure class="half">
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127130036.png" width="40%" />
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127130044.png" width="40%" />
+</figure>
 <figcaption>  
+
 </figcaption>
-</center>
+</div>
+
 
 
 
