@@ -64,7 +64,6 @@ PS：直观理解就是对于Cartographer的改进，子图中不仅仅优化pos
 </figcaption>
 </div> -->
 
-<!-- <div align="center"> -->
 <center class = "half">
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125335.png" width="41.5%" />
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250127125324.png" width="40%" />
