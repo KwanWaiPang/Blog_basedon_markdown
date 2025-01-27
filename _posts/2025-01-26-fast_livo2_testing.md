@@ -133,12 +133,11 @@ rosbag play YOUR_DOWNLOADED.bag
 </div>
 
 
-
-{% highlight html %}
+~~~
 PS:对于FAST-LIVO2-Dataset中不同的序列可能对应不同的参数，具体请见calibration.yaml文件，上面运行的时候忘记修改参数了~
 
 但似乎即使没有改外参效果还是不错的~
-{% endhighlight %}
+~~~
 
 
 # 论文阅读
