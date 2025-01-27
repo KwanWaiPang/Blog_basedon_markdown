@@ -141,7 +141,8 @@ PS:对于FAST-LIVO2-Dataset中不同的序列可能对应不同的参数，具�
 
 
 # 论文阅读
-Fast-LIVO2是基于Fast-LIVO的升级版本，一个基于ESIKF的lidar-image-imu里程计。跟前作一样，视频与lidar都是采用直接法。同时引入voxelmap（最近的系列工作的lio系统貌似都从fast-lio2改为了voxelmap，比如immesh等）
+Fast-LIVO2是基于Fast-LIVO的升级版本，一个基于ESIKF的lidar-image-imu里程计。跟前作一样，图像与lidar都是采用直接法（避免额外提取特征的开销同时也可以保证在少纹理或结构的场景提供更多的信息）。
+同时引入voxelmap（最近的系列工作的lio系统貌似都从fast-lio2改为了voxelmap，比如immesh等）且image和lidar都是基于一个统一的voxel map下进行处理的。
 此外通过引入on-demanding raycast operation （光线投射操作）和估算图像的曝光时间（这似乎是r3live里面的一个重要贡献）来增强系统的鲁棒性。
 
 <div align="center">
@@ -149,6 +150,15 @@ Fast-LIVO2是基于Fast-LIVO的升级版本，一个基于ESIKF的lidar-image-im
 <figcaption>  
 </figcaption>
 </div>
+
+论文的主要贡献点如下：
+1. 相比起的Fast-LIVO是异步更新雷达与视觉的观测量，Fast-LIVO2是顺序更新的（sequential update）
+2. image的直接法alignment采用了LiDAR的平面先验（plane priors，其实也就是把lio部分改为voxelmap，并要让image部分适配）
+3. 改进了视觉部分的patch更新策略来提升视觉alignment的精度
+4. 估算图像的曝光时间（Fast-LIVO没有这部分，但r3live有）
+5. on-demanding raycast operation，对于近处没有激光点的区域采用基于voxel的光线投射，来提升系统的鲁棒性
+除了上述贡献点以外作者还做了大量的实验，对比分析，总体来说，感觉是一个系统性的工作👍
+
 
 
 
