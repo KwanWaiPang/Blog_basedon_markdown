@@ -54,7 +54,8 @@ footer-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   tumblr: # https://<username>.tumblr.com
   twitter: 
-  youtube:
+  youtube: https://www.youtube.com/@Kwan-WaiPang
+  bilibili: https://space.bilibili.com/499377825?spm_id_from=333.1007.0.0
 
 # Text under the icons in footer
 footer-text: Please contact me for authorization before reusing or reposting

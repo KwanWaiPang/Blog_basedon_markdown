@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fast-LIVO2测试及论文解读"
+title: "Fast-LIVO2复现及论文解读"
 date:   2025-01-26
 tags: [SLAM, LiDAR]
 comments: true
