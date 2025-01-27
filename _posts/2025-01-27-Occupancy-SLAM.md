@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Occupancy-SLAM论文解读"
+title: "Occupancy-SLAM论文阅读"
 date:   2025-01-27
 tags: [SLAM, LiDAR]
 comments: true
@@ -14,7 +14,7 @@ toc: true
 
 
 # 引言
-本博文对Occupancy-SLAM系列工作进行解读与学习
+本博文对Occupancy-SLAM系列工作进行阅读与学习
 
 本博客仅供本人学习记录用～
 
