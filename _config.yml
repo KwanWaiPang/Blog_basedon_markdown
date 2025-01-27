@@ -55,6 +55,7 @@ footer-links:
   tumblr: # https://<username>.tumblr.com
   twitter: 
   youtube:
+  bilibili: "499377825"  # 替换为你的 B 站 ID
 
 # Text under the icons in footer
 footer-text: Please contact me for authorization before reusing or reposting
