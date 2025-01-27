@@ -146,7 +146,7 @@ Fast-LIVO2是基于Fast-LIVO的升级版本，一个基于ESIKF的lidar-image-im
 此外通过引入on-demanding raycast operation （光线投射操作）和估算图像的曝光时间（这似乎是r3live里面的一个重要贡献）来增强系统的鲁棒性。
 
 <div align="center">
-  <img src="../images/微信截图_20250126212319.png" width="80%" />
+  <img src="https://kwanwaipang.github.io/Poster_files/md_blog/微信截图_20250126212319.png" width="80%" />
 <figcaption>  
 </figcaption>
 </div>
