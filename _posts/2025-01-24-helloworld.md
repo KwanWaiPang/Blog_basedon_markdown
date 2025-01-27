@@ -23,6 +23,9 @@ toc: true
 
 <div align="center">
   <img src="../images/yijiansanlian.gif" width="60%" />
+<figcaption>  
+图片标题
+</figcaption>
 </div>
 
 # 插入youtube视频
