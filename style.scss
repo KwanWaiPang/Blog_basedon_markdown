@@ -514,10 +514,10 @@ nav {
 
 
 
-// TOC(目录)
+// TOC(目录样式)
 
 .toc {
-  width: 160px; //240px;
+  width: 240px;
   height: 100%;
   left: 30%;
   position: fixed;
@@ -528,7 +528,7 @@ nav {
     content:"目录";
     margin: 0 0 1em 1em;
     font-weight: 700;
-    font-size: $small-font-size; //1.2em;
+    font-size: 1.2em;
     display: block;
     padding-bottom: 0.6em;
     border-bottom: 3px double $divider-color;
