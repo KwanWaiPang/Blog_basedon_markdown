@@ -47,22 +47,6 @@ toc: true
 </div>
 
 插入并列的两张图片：
-<!-- <div align="center">
-  <table style="background-color: transparent;">
-    <tr>
-      <td style="border: none; background-color: transparent;">
-        <img src="https://kwanwaipang.github.io/Poster_files/md_blog/yijiansanlian.gif" width="100%" />
-      </td>
-      <td style="border: none; background-color: transparent;">
-        <img src="https://kwanwaipang.github.io/Poster_files/md_blog/yijiansanlian.gif" width="100%" />
-      </td>
-    </tr>
-  </table>
-  <figcaption>
-  图片标题
-  </figcaption>
-</div> -->
-
 <div align="center">
   <table style="background-color: transparent;">
     <tr>

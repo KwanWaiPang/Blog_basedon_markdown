@@ -183,21 +183,6 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 ### Differentiable Integration and Covariance Module
 
 基于获得的网络输出的IMU数据，再采用IMU kinematic model（也就是IMU预积分）来估算系统的状态：
-<!-- <div align="center">
-  <table style="background-color: transparent;">
-    <tr>
-      <td style="border: none; background-color: transparent;">
-        <img src="../images/微信截图_20250202204226.png" width="100%" />
-      </td>
-      <td style="border: none; background-color: transparent;">
-        <img src="../images/微信截图_20250202204755.png" width="100%" />
-      </td>
-    </tr>
-  </table>
-  <figcaption>
-  积分传播模型与协方差传播模型
-  </figcaption>
-</div> -->
 <div align="center">
   <table style="background-color: transparent;">
     <tr>
