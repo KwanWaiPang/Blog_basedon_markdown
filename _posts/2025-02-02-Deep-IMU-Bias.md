@@ -33,8 +33,40 @@ toc: false
 
 该工作实现以及对比了 LSTMs 和 Transformers两个模型对IMU bias的推断性能。
 网络不是学习运动模型，而是显示地学习IMU bias，这样也可以使得模型可以泛化到训练中没见过的运行模式。
+下图展示了，如果模型只是学习运动的模型，当泛化到不同的环境（比如从行人手持到四足机器人，或者平地走训练的模型用到上下楼梯的场景）就会导致发散。
+<div align="center">
+  <img src="../images/微信截图_20250202160846.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
 
+论文的主要贡献点如下:
+1. 设计一个神经网络可以从历史的IMU测量及bias中推断出IMU的bias
+2. 对比了LSTMs 和 Transformers两个模型，并且将他们融入VIO的因子图中
 
+论文的基于NN估算IMU-bias的VIO图优化的framework如下：
+<div align="center">
+  <img src="../images/微信截图_20250202161751.png" width="60%" />
+  <img src="../images/微信截图_20250202161803.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+而所谓的可以从历史的IMU测量及bias中推断出IMU的bias的神经网络则是如下表示：
+<div align="center">
+  <img src="../images/微信截图_20250202162236.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+此外设计了IMU-bias的因子如下：
+<div align="center">
+  <img src="../images/微信截图_20250202162735.png" width="60%" />
+<figcaption>  
+注意，此处的方差给定的是常数，当然也可以通过网络来估算uncertainty
+</figcaption>
+</div>
+
+至于network的结构，论文中设计了两个结构并且进行了对比
 <div align="center">
   <table style="background-color: transparent;">
     <tr>
@@ -49,6 +81,40 @@ toc: false
   <figcaption>
   基于LSTM以及Transformer的IMU-bias Interference结构
   </figcaption>
+</div>
+
+作者测试了多种场景，包括手持、四足、飞机。
+但可惜的是既没有开源代码，似乎也没有说baseline VIO指的是哪个具体算法
+
+<div align="center">
+  <table style="background-color: transparent;">
+    <tr>
+      <td style="border: none; background-color: transparent;">
+        <img src="../images/微信截图_20250202163309.png" width="100%" />
+      </td>
+      <td style="border: none; background-color: transparent;">
+        <img src="../images/微信截图_20250202163500.png" width="100%" />
+      </td>
+    </tr>
+  </table>
+  <figcaption>
+手持实验（Newer College Multi-Camera Dataset(NCD-Multi)）
+  </figcaption>
+</div>
+
+
+<div align="center">
+  <img src="../images/微信截图_20250202163627.png" width="60%" />
+<figcaption>  
+在四足上的测试效果（网络都是用手持的数据进行训练的，也没有进行fine-tuning）
+</figcaption>
+</div>
+
+<div align="center">
+  <img src="../images/微信截图_20250202163831.png" width="60%" />
+<figcaption>  
+Euroc飞行数据集（平移和旋转误差）
+</figcaption>
 </div>
 
 
