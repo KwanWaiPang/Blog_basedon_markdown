@@ -37,7 +37,7 @@ toc: true
 * 关于文章的命名格式：博客文章必须按照统一的命名格式 yyyy-mm-dd-blogName.md
 
 
-# 插入图片
+# 插入图片与动图
 
 <div align="center">
   <img src="https://kwanwaipang.github.io/Poster_files/md_blog/yijiansanlian.gif" width="60%" />
