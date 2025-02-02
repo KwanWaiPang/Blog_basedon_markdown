@@ -2,7 +2,7 @@
 layout: post
 title: "blogName"
 date:   yyyy-mm-dd
-tags: [coding]
+tags: []
 comments: true
 author: kwanwaipang
 toc: true
