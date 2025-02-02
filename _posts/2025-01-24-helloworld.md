@@ -91,7 +91,7 @@ print("Hello, World")
 
 ## 插入bash代码
 
-```Bash
+```bash
 # 注意：注释及部分字母是有区别的
 rm -rf .git
 git init
