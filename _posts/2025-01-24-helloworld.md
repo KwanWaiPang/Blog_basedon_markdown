@@ -58,7 +58,7 @@ toc: true
 <iframe width="560" height="315" src="//player.bilibili.com/player.html?isOutside=true&aid=983500021&bvid=BV15t4y1t7yS&cid=777013703&p=1&autoplay=0" title="Bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-# 插入代码链接
+# 插入代码块
 ~~~
 hello world
 ~~~
@@ -88,6 +88,30 @@ int main() {
 ```python 
 print("Hello, World")
 ```
+
+## 插入bash代码
+
+```Bash
+# 注意：注释及部分字母是有区别的
+rm -rf .git
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin YOUR_github_repository_name
+git push -u origin main
+```
+
+~~~
+# 注意：注释是有区别的
+rm -rf .git
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin YOUR_github_repository_name
+git push -u origin main
+~~~
 
 
 
