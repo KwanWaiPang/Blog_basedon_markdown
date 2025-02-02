@@ -201,6 +201,9 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 
 并基于预积分的结果来supervise data-driven module而不是对上面的IMU原始输出做监督，也就是Differentiable Integration and Covariance Module（其实跟DPVO和Droid-SLAM中的Differentiable BA的概念是很像的~）
 
+### Loss Function and Training strategy
+
+
 
 
 最终refined的状态及协方差则跟GPS一起通过pose graph optimization来进行融合。如下图所示
