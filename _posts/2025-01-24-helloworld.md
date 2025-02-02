@@ -102,6 +102,7 @@ git remote add origin YOUR_github_repository_name
 git push -u origin main
 ```
 
+若单纯使用代码块：
 ~~~
 # 注意：注释是有区别的
 rm -rf .git
