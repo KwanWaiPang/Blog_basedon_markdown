@@ -2,7 +2,7 @@
 
 * [My Blog](https://kwanwaipang.github.io/File/Blogs/My_Blog.html)
 * [This access page](https://kwanwaipang.github.io/Blog_basedon_markdown/)
-* 可以fork此仓库然后重命名为自己想要的仓库名（无需跟github同名，只需用链接:https://YOUR_username.github.io/YOUR_repository_name/即可接入）
+* 可以fork此仓库然后重命名为自己想要的仓库名（无需跟github同名，只需用链接: ```https://YOUR_username.github.io/YOUR_repository_name/``` 即可接入）
 * 确保对应的```YOUR_repository_name```仓库中 Github Pages配置如下：
 <div align="center">
   <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250202171747.png" width="60%" />
