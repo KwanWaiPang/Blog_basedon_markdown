@@ -16,7 +16,25 @@ toc: true
 # 引言
 本博客作为基于markdown的静态博客的第一篇博客，用于记录各类型指令以及进行测试~
 
-对于基于markdown静态博客的配置过程可以参考[链接](https://lemonchann.github.io/blog/create_blog_with_github_pages/)，或者直接fork我的[github repositories](https://github.com/KwanWaiPang/Blog_basedon_markdown)
+对于基于markdown静态博客的配置过程可以参考[链接](https://lemonchann.github.io/blog/create_blog_with_github_pages/)，或者直接fork我的[github repositories](https://github.com/KwanWaiPang/Blog_basedon_markdown)进行配置也可~
+
+
+# 使用此博客模板
+
+博客初始化的时候参考的是[lemonchann的博客](https://lemonchann.github.io/blog/create_blog_with_github_pages/)。
+而基于初始的模板，本博客做了系列的改进。
+* 可以fork此[github 仓库](https://github.com/KwanWaiPang/Blog_basedon_markdown)然后重命名为自己想要的仓库名
+* PS: 无需跟github账户同名，只需用链接:```https://YOUR_username.github.io/YOUR_repository_name/```即可接入对应的博客。比如此博客的接入链接为```https://kwanwaipang.github.io/Blog_basedon_markdown/```
+* 需确保对应的```YOUR_repository_name```仓库中 Github Pages配置如下：
+
+<div align="center">
+  <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250202171747.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+* 所有博客的文章用markdown语法，写好统一放在_post文件夹下上传，git page会自动从你的git仓库拉去解析成网页，立刻就能在你的博客网页浏览。
+* 关于文章的命名格式：博客文章必须按照统一的命名格式 yyyy-mm-dd-blogName.md
 
 
 # 插入图片
