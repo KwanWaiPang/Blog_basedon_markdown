@@ -184,7 +184,7 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 
 基于获得的网络输出的IMU数据，再采用IMU kinematic model（也就是IMU预积分）来估算系统的状态：
 <div align="center">
-  <table style="background-color: transparent;">
+  <table style="border: none; background-color: transparent;">
     <tr>
       <td style="width: 50%; border: none; padding: 0.001; background-color: transparent; vertical-align: middle;">
         <img src="../images/微信截图_20250202204226.png" style="width: 100%" />
