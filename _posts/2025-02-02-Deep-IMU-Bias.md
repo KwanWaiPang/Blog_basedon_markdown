@@ -159,6 +159,62 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 2. kinematic motion model-based 和 data-driven method混合imu-建模；
 3. 将不确定性模块（uncertainty module）与噪声校正模块（ noise correction module）联合训练
 
+### Data-driven module
+如上面图(Fig. 4)中所示。采用encoder-decoder网络结构处理原始的IMU数据（加速度和角速度）。
+网络输出加速度和角速度的校正，此外，也输出对应的uncertainty。
+
+对于```encoder network```首先采用 1D CNN network来学习lower-level features,然后通过一个 gated recurrent unit (GRU)来学习时间维度的关联。
+两个task都（correction和uncertainty）采用相同的encoder网络（shared encoder network）来处理原始的IMU。
+
+对于```decoder network```,如下：
+<div align="center">
+  <img src="../images/微信截图_20250202203945.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+最终的网络输出的IMU观测量可以表达如下：
+<div align="center">
+  <img src="../images/微信截图_20250202204045.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+### Differentiable Integration and Covariance Module
+
+基于获得的网络输出的IMU数据，再采用IMU kinematic model（也就是IMU预积分）来估算系统的状态：
+<!-- <div align="center">
+  <table style="background-color: transparent;">
+    <tr>
+      <td style="border: none; background-color: transparent;">
+        <img src="../images/微信截图_20250202204226.png" width="100%" />
+      </td>
+      <td style="border: none; background-color: transparent;">
+        <img src="../images/微信截图_20250202204755.png" width="100%" />
+      </td>
+    </tr>
+  </table>
+  <figcaption>
+  积分传播模型与协方差传播模型
+  </figcaption>
+</div> -->
+<div align="center">
+  <table style="background-color: transparent;">
+    <tr>
+      <td style="width: 50%; border: none; padding: 1; background-color: transparent; vertical-align: middle;">
+        <img src="../images/微信截图_20250202204226.png" style="width: 100%" />
+      </td>
+      <td style="width: 50%; border: none; padding: 1; background-color: transparent; vertical-align: middle;">
+        <img src="../images/微信截图_20250202204755.png" style="width: 100%" />
+      </td>
+    </tr>
+  </table>
+  <figcaption>
+  积分传播模型与协方差传播模型
+  </figcaption>
+</div>
+
+并基于预积分的结果来supervise data-driven module而不是对上面的IMU原始输出做监督，也就是Differentiable Integration and Covariance Module（其实跟DPVO和Droid-SLAM中的Differentiable BA的概念是很像的~）
 
 
 
