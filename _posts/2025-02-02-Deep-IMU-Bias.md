@@ -130,8 +130,46 @@ Euroc飞行数据集（平移和旋转误差）
 # AirIMU: Learning uncertainty propagation for inertial odometry
 * [code](https://github.com/haleqiu/AirIMU)
 * [paper](https://arxiv.org/pdf/2310.04874)
+* [website](https://airimu.github.io/)
+
+## 理论解读
+
+<div align="center">
+  <img src="../images/微信截图_20250202193858.png" width="80%" />
+<figcaption>  
+</figcaption>
+</div>
 
 
+Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion model-based （也就是传统的使用基于kinematics模型的IMU预积分<sup>[paper](https://infoscience.epfl.ch/server/api/core/bitstreams/e23a9898-f5a4-44ce-bbb0-e70854b170d2/content)</sup>） 和 data-driven method（也就是基于learning的）。
+而本文则是提出混合两者的方法，用data-driven methods来估算不确定性（特别是 non-deterministic errors），而model-based methods可以提升系统的泛化能力（就是结合版）。
+如下图所示。通过利用data-driven method对非确定性噪声和运动模型进行建模，以确保在新环境中的泛化能力。
+为了使AirIMU能够学习不确定性和噪声模型，构建了一个可微IMU积分器（differentiable IMU integrator）和一个可微分协方差传播器（differentiable covariance propagator）。
+可以预测长时间IMU预积分的累积协方差。
+此外，通过将不确定性模块（uncertainty module）与噪声校正模块（ noise correction module）联合训练，可以捕获更好的IMU特征，并使两项任务都受益。
+<div align="center">
+  <img src="../images/微信截图_20250202195327.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+论文的贡献点如下：
+
+1. the first to train a deep neural network that models IMU sensor uncertainty through differentiable covariance propagation。也就是网络可以预测IMU的不确定性（协方差）
+2. kinematic motion model-based 和 data-driven method混合imu-建模；
+3. 将不确定性模块（uncertainty module）与噪声校正模块（ noise correction module）联合训练
+
+
+
+
+最终refined的状态及协方差则跟GPS一起通过pose graph optimization来进行融合。如下图所示
+<div align="center">
+  <img src="../images/微信截图_20250202202738.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
+
+## 代码复现
 
 
 <!-- # 参考资料 -->
