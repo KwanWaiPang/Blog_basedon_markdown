@@ -66,10 +66,10 @@ toc: true
 <div align="center">
   <table style="background-color: transparent;">
     <tr>
-      <td style="width: 50%; border: none; padding: 1; background-color: transparent; vertical-align: middle;">
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
         <img src="https://kwanwaipang.github.io/Poster_files/md_blog/yijiansanlian.gif" width="100%" />
       </td>
-      <td style="width: 50%; border: none; padding: 1; background-color: transparent; vertical-align: middle;">
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
         <img src="https://kwanwaipang.github.io/Poster_files/md_blog/yijiansanlian.gif" width="100%" />
       </td>
     </tr>

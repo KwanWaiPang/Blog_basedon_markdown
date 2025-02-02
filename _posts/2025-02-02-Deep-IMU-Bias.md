@@ -201,10 +201,10 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 <div align="center">
   <table style="background-color: transparent;">
     <tr>
-      <td style="width: 50%; border: none; padding: 1; background-color: transparent; vertical-align: middle;">
+      <td style="width: 50%; border: none; padding: 0.001; background-color: transparent; vertical-align: middle;">
         <img src="../images/微信截图_20250202204226.png" style="width: 100%" />
       </td>
-      <td style="width: 50%; border: none; padding: 1; background-color: transparent; vertical-align: middle;">
+      <td style="width: 50%; border: none; padding: 0.001; background-color: transparent; vertical-align: middle;">
         <img src="../images/微信截图_20250202204755.png" style="width: 100%" />
       </td>
     </tr>
