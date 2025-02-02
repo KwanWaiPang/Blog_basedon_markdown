@@ -6,46 +6,12 @@
 
 
 <!-- 载入GitHub按钮库 -->
-<!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 <!-- Star按钮 -->
-<!-- <a class="github-button" 
+<a class="github-button" 
   href="https://github.com/KwanWaiPang/KwanWaiPang.github.io" 
   data-icon="octicon-star" 
   data-size="large"
   data-show-count="true" 
-  aria-label="Star 你的用户名/你的仓库名 on GitHub">Star</a> -->
-
-<!-- GitHub Star按钮 -->
-<button id="starButton" class="github-button" data-size="large">Star</button>
-
-<script>
-// 点击按钮时执行
-document.getElementById('starButton').addEventListener('click', function () {
-    // 在这里填入你自己的 token
-    const token = '你的GitHubToken';
-
-    // GitHub API URL
-    const apiUrl = 'https://api.github.com/user/starred/KwanWaiPang/KwanWaiPang.github.io';
-
-    // 创建 fetch 请求
-    fetch(apiUrl, {
-        method: 'PUT',
-        headers: {
-            'Authorization': `token ${token}`,
-            'Accept': 'application/vnd.github.v3+json'
-        }
-    })
-    .then(response => {
-        if (response.ok) {
-            alert('成功为项目添加 Star!');
-        } else {
-            alert('添加 Star 失败!');
-        }
-    })
-    .catch(error => {
-        alert('请求失败， 请检查网络或 token 是否有效！');
-        console.error('Error:', error);
-    });
-});
-</script>
+  aria-label="Star 你的用户名/你的仓库名 on GitHub">Star</a>
