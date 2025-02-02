@@ -10,6 +10,7 @@ toc: false
 
 
 # 引言
+
 对于IMU-based odometry，或者说所有包含IMU的framework，如LIO或VIO，IMU的bias建模是重中之重。
 特别是VIO，标定及sensor modeling是影响系统性能最关键的部分。一般传统的方法都是把IMU的bias建模为additive Gaussian noise + random walk.
 得益于深度学习强大的性能，基于learning的IMU bias建模也将具备很大的发展潜力。
@@ -27,9 +28,14 @@ toc: false
 
 
 
-
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 # Deep IMU Bias Inference for Robust Visual-Inertial Odometry with Factor Graphs
 * [RAL 2022](https://arxiv.org/pdf/2211.04517)
+
+低成本、小型化的微机电系统（MEMS）惯性测量单元（IMU）已在机器人学和行人追踪领域得到广泛应用。
+然而，单纯依赖IMU的状态估计会受到严重漂移影响。
+这种漂移源于IMU积分过程中各类误差的累积，这些误差通常被统一建模为additive Gaussian noise + random walk。
+由于漂移的累积，仅通过IMU测量积分进行状态估计的有效时间窗口通常不超过数秒。
 
 该工作实现以及对比了 LSTMs 和 Transformers两个模型对IMU bias的推断性能。
 网络不是学习运动模型，而是显示地学习IMU bias，这样也可以使得模型可以泛化到训练中没见过的运行模式。
@@ -118,6 +124,9 @@ Euroc飞行数据集（平移和旋转误差）
 </div>
 
 
+
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 # AirIMU: Learning uncertainty propagation for inertial odometry
 * [code](https://github.com/haleqiu/AirIMU)
 * [paper](https://arxiv.org/pdf/2310.04874)
