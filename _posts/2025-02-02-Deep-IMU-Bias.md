@@ -226,7 +226,7 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 </figcaption>
 </div>
 
-# IMU-GPS PGO system
+### IMU-GPS PGO system
 虽然采用了强大的learning来估算IMU的模型，但仍然需要外部校正来避免累积误差，而作者采用的是GPS+IMU~
 最终refined的状态及协方差则跟GPS一起通过pose graph optimization来进行融合。如下图所示
 <div align="center">
@@ -244,8 +244,15 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 接下来通过代码复现来看看真实的效果如何~
 
 * [AirIMU_comment](https://github.com/KwanWaiPang/AirIMU_comment)
+* 其中的环境依赖是基于[pypose](https://github.com/pypose/pypose)
+* pypose: a robotics-oriented, PyTorch-based library that combines deep perceptual models with physics-based optimization techniques.
+* 运行```pip install pypose```后可以看到conda环境自动安装了系列依赖
 
-
+<div align="center">
+  <img src="../images/微信截图_20250203115750.png" width="60%" />
+<figcaption>  
+</figcaption>
+</div>
 
 
 <!-- # 参考资料 -->
