@@ -206,6 +206,10 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 
 
 
+
+
+
+
 最终refined的状态及协方差则跟GPS一起通过pose graph optimization来进行融合。如下图所示
 <div align="center">
   <img src="../images/微信截图_20250202202738.png" width="60%" />
