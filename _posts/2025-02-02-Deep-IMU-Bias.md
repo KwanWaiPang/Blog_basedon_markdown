@@ -243,6 +243,8 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 </div>
 接下来通过代码复现来看看真实的效果如何~
 
+* [AirIMU_comment](https://github.com/KwanWaiPang/AirIMU_comment)
+
 
 
 
