@@ -31,30 +31,24 @@
 	</span>
 </div>
 
-<!--  先放置统计显示元素,后加载脚本 -->
+<!-- 不蒜子脚本 + 强制初始化逻辑 -->
 <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-<!-- 添加手动初始化逻辑 -->
 <script>
-  // 常规页面初始化
-  if (typeof busuanzi === 'object') {
-    busuanzi.fetch();
-  }
-
-  // 如果是 SPA，在路由切换后调用（示例为通用方案）
-  document.addEventListener('DOMContentLoaded', function() {
-    if (typeof busuanzi === 'object') {
-      busuanzi.fetch();
-    }
-  });
-
-  // 兼容性兜底：5秒后强制更新
-  setTimeout(() => {
+  // 初始化函数
+  function initBusuanzi() {
     if (typeof busuanzi === 'object') {
       busuanzi.fetch();
     } else {
-      document.getElementById('busuanzi_value_site_pv').textContent = 'N/A';
-      document.getElementById('busuanzi_value_site_uv').textContent = 'N/A';
+      console.error('不蒜子脚本未加载');
+      document.querySelectorAll('[id^="busuanzi_value_"]').forEach(el => {
+        el.textContent = 'N/A';
+      });
     }
-  }, 5000);
+  }
+
+  // 页面加载时执行
+  initBusuanzi();
+
+  // 单页应用路由切换时执行（根据你的框架调整）
+  window.onpopstate = initBusuanzi; // 监听浏览器前进/后退
 </script>
