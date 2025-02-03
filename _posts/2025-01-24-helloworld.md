@@ -78,7 +78,7 @@ toc: true
 
 ## 自己的视频链接
 <div align="center">
-<video playsinline autoplay loop muted src="https://kwanwaipang.github.io/SLAM_DEMO/evi_sam.mp4" poster="./File/Representative_works/loading-icon.gif" alt="sym" width="560" height="315" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+<video playsinline autoplay loop muted src="https://kwanwaipang.github.io/SLAM_DEMO/evi_sam.mp4" poster="https://kwanwaipang.github.io/File/Representative_works/loading-icon.gif" alt="sym" width="560" height="315" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
 </div>
 
 # 插入代码块

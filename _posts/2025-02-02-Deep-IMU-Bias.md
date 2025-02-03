@@ -237,9 +237,13 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 
 
 ## 代码复现
-论文的实验是非常惊艳的，比如下面的
-<video autoplay controls muted loop playsinline height="100%">
-  <source src="/static/images/alto_show.mp4" type="video/mp4">
-</video>
+论文的实验是非常惊艳的，比如下面的，展示了在直升机上估算的轨迹明显比原始IMU预积分的要更接近ground truth
+<div align="center">
+<video playsinline autoplay loop muted src="https://airimu.github.io/static/images/alto_show.mp4" poster="https://kwanwaipang.github.io/File/Representative_works/loading-icon.gif" alt="sym" width="560" height="315" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+</div>
+接下来通过代码复现来看看真实的效果如何~
+
+
+
 
 <!-- # 参考资料 -->
