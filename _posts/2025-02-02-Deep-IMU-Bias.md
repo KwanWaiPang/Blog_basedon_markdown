@@ -202,14 +202,32 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 并基于预积分的结果来supervise data-driven module而不是对上面的IMU原始输出做监督，也就是Differentiable Integration and Covariance Module（其实跟DPVO和Droid-SLAM中的Differentiable BA的概念是很像的~）
 
 ### Loss Function and Training strategy
+论文定义了noise correction的state loss以及covariance loss如下
+<div align="center">
+  <table style="border: none; background-color: transparent;">
+    <tr>
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="../images/微信截图_20250203112353.png" width="100%" />
+      </td>
+      <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
+        <img src="../images/微信截图_20250203112405.png" width="100%" />
+      </td>
+    </tr>
+  </table>
+  <figcaption>
+  state loss for noise correction VS. covariance loss
+  </figcaption>
+</div>
+最终联合优化的loss如下
+<div align="center">
+  <img src="../images/微信截图_20250203112617.png" width="60%" />
+<figcaption>
+ε = 1×10<sup>−3</sup>
+</figcaption>
+</div>
 
-
-
-
-
-
-
-
+# IMU-GPS PGO system
+虽然采用了强大的learning来估算IMU的模型，但仍然需要外部校正来避免累积误差，而作者采用的是GPS+IMU~
 最终refined的状态及协方差则跟GPS一起通过pose graph optimization来进行融合。如下图所示
 <div align="center">
   <img src="../images/微信截图_20250202202738.png" width="60%" />
@@ -217,7 +235,11 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 </figcaption>
 </div>
 
-## 代码复现
 
+## 代码复现
+论文的实验是非常惊艳的，比如下面的
+<video autoplay controls muted loop playsinline height="100%">
+  <source src="/static/images/alto_show.mp4" type="video/mp4">
+</video>
 
 <!-- # 参考资料 -->
