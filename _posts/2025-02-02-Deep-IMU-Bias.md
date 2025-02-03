@@ -280,7 +280,7 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 ### 安装配置
 1. 安装[pypose](https://github.com/pypose/pypose)
 * pypose is a PyTorch-based library that combines deep perceptual models with physics-based optimization techniques.
-```Bash
+```bash
 conda create -n airIMU python=3.10.11
 conda activate airIMU
 pip install pypose
