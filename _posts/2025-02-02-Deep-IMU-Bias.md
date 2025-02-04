@@ -38,7 +38,7 @@ toc: false
 由于漂移的累积，仅通过IMU测量积分进行状态估计的有效时间窗口通常不超过数秒。
 
 该工作实现以及对比了 LSTMs 和 Transformers两个模型对IMU bias的推断性能。
-网络不是学习运动模型，而是显示地学习IMU bias，这样也可以使得模型可以泛化到训练中没见过的运行模式。
+网络不是学习运动模型，而是显式地学习IMU bias，这样也可以使得模型可以泛化到训练中没见过的运行模式。
 下图展示了，如果模型只是学习运动的模型，当泛化到不同的环境（比如从行人手持到四足机器人，或者平地走训练的模型用到上下楼梯的场景）就会导致发散。
 <div align="center">
   <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250202160846.png" width="60%" />
@@ -172,6 +172,7 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 <div align="center">
   <img src="../images/微信截图_20250202195327.png" width="60%" />
 <figcaption>  
+airiMU学习的是IMU预积分，并且loss也是用预积分来监督的（这可能容易导致学习了具体某个imu而影响泛化能力）
 </figcaption>
 </div>
 
@@ -327,6 +328,11 @@ python evaluation/evaluate_state.py --dataconf configs/datasets/BaselineEuroc/Eu
 ~~~
 
 5. 结果如下：
+从实验效果来看还是比较惊艳的，但是作者在原文也提到这篇工作的limitation，
+`
+ AirIMU model trained on a single IMU does not readily generalize to a different IMU with different specifications and operating frequencies
+`
+换言之就是泛化能力是有限的，需要在特定数据集下训练才可～
 * MH_02_easy
 <div align="center">
   <table style="border: none; background-color: transparent;">
