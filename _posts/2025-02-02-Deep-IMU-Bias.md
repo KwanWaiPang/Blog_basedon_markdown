@@ -262,7 +262,7 @@ airiMU学习的是IMU预积分，并且loss也是用预积分来监督的（这�
 ## 代码复现
 论文的实验是非常惊艳的，比如下面的，展示了在直升机上估算的轨迹明显比原始IMU预积分的要更接近ground truth
 <div align="center">
-<video playsinline autoplay loop muted src="https://airimu.github.io/static/images/alto_show.mp4" poster="https://kwanwaipang.github.io/File/Representative_works/loading-icon.gif" alt="sym" width="560" height="315" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+<video playsinline autoplay loop muted src="https://airimu.github.io/static/images/alto_show.mp4" poster="https://kwanwaipang.github.io/File/Representative_works/loading-icon.gif" alt="sym" width="80%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
 </div>
 接下来通过代码复现来看看真实的效果如何~
 
@@ -329,9 +329,7 @@ python evaluation/evaluate_state.py --dataconf configs/datasets/BaselineEuroc/Eu
 
 5. 结果如下：
 从实验效果来看还是比较惊艳的，但是作者在原文也提到这篇工作的limitation，
-{% highlight html %}
- AirIMU model trained on a single IMU does not readily generalize to a different IMU with different specifications and operating frequencies
-{% endhighlight %}
+***AirIMU model trained on a single IMU does not readily generalize to a different IMU with different specifications and operating frequencies***
 换言之就是泛化能力是有限的，需要在特定数据集下训练才可～
 * MH_02_easy
 <div align="center">
