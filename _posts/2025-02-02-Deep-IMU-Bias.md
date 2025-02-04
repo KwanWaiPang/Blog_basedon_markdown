@@ -329,9 +329,9 @@ python evaluation/evaluate_state.py --dataconf configs/datasets/BaselineEuroc/Eu
 
 5. 结果如下：
 从实验效果来看还是比较惊艳的，但是作者在原文也提到这篇工作的limitation，
-`
+{% highlight html %}
  AirIMU model trained on a single IMU does not readily generalize to a different IMU with different specifications and operating frequencies
-`
+{% endhighlight %}
 换言之就是泛化能力是有限的，需要在特定数据集下训练才可～
 * MH_02_easy
 <div align="center">
