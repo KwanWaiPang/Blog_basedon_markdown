@@ -131,7 +131,7 @@ Euroc飞行数据集（平移和旋转误差）
 该工作也是采用DNN计算可观测的IMU预积分，并跟多传感器融合来获取性能的增益。
 
 <div align="center">
-  <img src="../images/微信截图_20250203154310.png" width="60%" />
+  <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250203154310.png" width="60%" />
 <figcaption> 
 </figcaption>
 </div>
@@ -157,7 +157,7 @@ Euroc飞行数据集（平移和旋转误差）
 ## 理论解读
 
 <div align="center">
-  <img src="../images/微信截图_20250202193858.png" width="80%" />
+  <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250202193858.png" width="80%" />
 <figcaption>  
 </figcaption>
 </div>
@@ -170,7 +170,7 @@ Inertial odometry(IO)中对于IMU的建模可以分为两种：kinematic motion 
 可以预测长时间IMU预积分的累积协方差。
 此外，通过将不确定性模块（uncertainty module）与噪声校正模块（ noise correction module）联合训练，可以捕获更好的IMU特征，并使两项任务都受益。
 <div align="center">
-  <img src="../images/微信截图_20250202195327.png" width="60%" />
+  <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250202195327.png" width="60%" />
 <figcaption>  
 airiMU学习的是IMU预积分，并且loss也是用预积分来监督的（这可能容易导致学习了具体某个imu而影响泛化能力）
 </figcaption>
@@ -191,14 +191,14 @@ airiMU学习的是IMU预积分，并且loss也是用预积分来监督的（这�
 
 对于```decoder network```,如下：
 <div align="center">
-  <img src="../images/微信截图_20250202203945.png" width="60%" />
+  <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250202203945.png" width="60%" />
 <figcaption>  
 </figcaption>
 </div>
 
 最终的网络输出的IMU观测量可以表达如下：
 <div align="center">
-  <img src="../images/微信截图_20250202204045.png" width="60%" />
+  <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250202204045.png" width="60%" />
 <figcaption>  
 </figcaption>
 </div>
@@ -210,10 +210,10 @@ airiMU学习的是IMU预积分，并且loss也是用预积分来监督的（这�
   <table style="border: none; background-color: transparent;">
     <tr>
       <td style="width: 50%; border: none; padding: 0.001; background-color: transparent; vertical-align: middle;">
-        <img src="../images/微信截图_20250202204226.png" style="width: 100%" />
+        <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250202204226.png" style="width: 100%" />
       </td>
       <td style="width: 50%; border: none; padding: 0.001; background-color: transparent; vertical-align: middle;">
-        <img src="../images/微信截图_20250202204755.png" style="width: 100%" />
+        <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250202204755.png" style="width: 100%" />
       </td>
     </tr>
   </table>
@@ -230,10 +230,10 @@ airiMU学习的是IMU预积分，并且loss也是用预积分来监督的（这�
   <table style="border: none; background-color: transparent;">
     <tr>
       <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
-        <img src="../images/微信截图_20250203112353.png" width="100%" />
+        <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250203112353.png" width="100%" />
       </td>
       <td style="width: 50%; border: none; padding: 0.01; background-color: transparent; vertical-align: middle;">
-        <img src="../images/微信截图_20250203112405.png" width="100%" />
+        <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250203112405.png" width="100%" />
       </td>
     </tr>
   </table>
@@ -243,7 +243,7 @@ airiMU学习的是IMU预积分，并且loss也是用预积分来监督的（这�
 </div>
 最终联合优化的loss如下
 <div align="center">
-  <img src="../images/微信截图_20250203112617.png" width="60%" />
+  <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250203112617.png" width="60%" />
 <figcaption>
 ε = 1×10<sup>−3</sup>
 </figcaption>
@@ -253,7 +253,7 @@ airiMU学习的是IMU预积分，并且loss也是用预积分来监督的（这�
 虽然采用了强大的learning来估算IMU的模型，但仍然需要外部校正来避免累积误差，而作者采用的是GPS+IMU~
 最终refined的状态及协方差则跟GPS一起通过pose graph optimization来进行融合。如下图所示
 <div align="center">
-  <img src="../images/微信截图_20250202202738.png" width="60%" />
+  <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250202202738.png" width="60%" />
 <figcaption>  
 </figcaption>
 </div>
@@ -272,7 +272,7 @@ airiMU学习的是IMU预积分，并且loss也是用预积分来监督的（这�
 * 运行```pip install pypose```后可以看到conda环境自动安装了系列依赖
 
 <div align="center">
-  <img src="../images/微信截图_20250203115750.png" width="60%" />
+  <img src="https://kwanwaipang.github.io/ubuntu_md_blog/images/微信截图_20250203115750.png" width="60%" />
 <figcaption>  
 </figcaption>
 </div>
