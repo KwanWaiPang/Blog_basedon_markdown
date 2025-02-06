@@ -46,3 +46,4 @@ jobs:
           else
             git commit -m "Auto-update TOC"
             git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}  # 使用 PAT 推送
+          fi
