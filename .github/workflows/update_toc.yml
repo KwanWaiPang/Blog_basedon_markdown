@@ -1,0 +1,48 @@
+name: Update TOC
+
+on:
+  push:
+    paths:
+      - '_posts/**/*.md'  # 包括所有子文件夹中的.md文件
+    branches:
+      - main  # 或者你用的其他分支
+
+jobs:
+  generate-toc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4  # 检出代码
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'  # 明确指定 Python 版本
+
+      - name: Install dependencies
+        run: |
+          pip install requests  # 安装必要的依赖
+          python --version  # 打印 Python 版本，以确保 Python 环境已正确设置
+
+      - name: Check current directory
+        run: |
+          pwd  # 显示当前工作目录
+          ls -l  # 列出当前工作目录中的文件
+
+      - name: Generate TOC
+        run: |
+          python generate_toc.py  # 运行 TOC 生成脚本
+          echo "Finished running generate_toc.py"  # 打印确认信息
+
+      - name: Show git status
+        run: git status  # 显示 Git 状态，检查是否有文件变动
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add readme.md  # 添加修改的 readme.md
+          if git diff-index --quiet HEAD --; then
+            echo "No changes to commit"
+          else
+            git commit -m "Auto-update TOC"
+            git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}  # 使用 PAT 推送

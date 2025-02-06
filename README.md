@@ -11,3 +11,9 @@
 </div>
 * 所有博客的文章用markdown语法，写好统一放在_post文件夹下上传，git page会自动从你的git仓库拉去解析成网页，立刻就能在你的博客网页浏览。
 * 关于文章的命名格式：博客文章必须按照统一的命名格式 yyyy-mm-dd-blogName.md
+
+## 自动生成md.文件的目录
+### list
+<!-- AUTO_GENERATED_TOC_START -->
+
+<!-- AUTO_GENERATED_TOC_END -->
